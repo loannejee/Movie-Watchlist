@@ -26,10 +26,12 @@ This site will be a self-hosted application for one person to keep track of what
 - Some CSS and front-end Javascript will be used to improve user experience in the browser.
 
 ##### Proposed task order (subject to change):
-- Set up initial boilerplate for project (git setup, installing libraries, establishing basic routes, creating database).
-- Defining models with Sequelize for movies and genres tables, and relating them.
-- Defining a route to send back an HTML page with a form to create a genre.
-- Defining a route to send back an HTML page with a form to enter a new movie.
-- Defining a route to send back an HTML page with the list of movies in the database.
-- Adding functionality for setting a movie to "watched" and "unwatched"
-- Updating the movies listing routes to filter by genre and "unwatched"
+1. Set up initial boilerplate for project (git setup, installing libraries, establishing basic routes, creating database).
+2. Defining models with Sequelize for movies and genres tables, and relating them.
+    - Movie
+    - Genre
+3. Defining a route to send back an HTML page with a form to create a genre.
+4. Defining a route to send back an HTML page with a form to enter a new movie.
+5. Defining a route to send back an HTML page with the list of movies in the database.
+6. Adding functionality for setting a movie to "watched" and "unwatched"
+7. Updating the movies listing routes to filter by genre and "unwatched"
