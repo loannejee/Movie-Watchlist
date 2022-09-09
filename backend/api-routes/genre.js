@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Genre } = require('../db/index')
 
 // GET /api-routes/genre
-// respond with HTML text to be rendered by the browser
+// respond with HTML text/string to be rendered by the browser
 // when we hit this route, we're sending back a html form:
 router.get('/', async (req, res, next) => {
     res.send(
@@ -15,23 +15,28 @@ router.get('/', async (req, res, next) => {
                     font-family: Monospace
                 }
                 input {
-                    padding: 6px 10px;
-                    box-sizing: border-box;
+                    padding: 6px 12px;
                     height: 46px;
-                    width: 300px
+                    width: 300px;
+                    font-size: 20px;
+                    margin-left: 10px;
                 }
                 h1 {
-                    margin-top: 20px;
-                    box-sizing: border-box;
-                    font-size: 40px;
+                    font-size: 42px;
+                    margin-top: 26px;
+                    margin-bottom: 0px;
                 }
-                label {
-                    font-size: 36px;
+                p {
+                    font-size: 38px;
                 }
                 button {
                     font-size: 20px;
                     height: 46px;
                     width: 150px
+                }
+                div {
+                    display: flex;
+                    align-items: center;
                 }
             </style>
 
@@ -41,7 +46,7 @@ router.get('/', async (req, res, next) => {
                 <h1>Add new genre</h1>
                 <form method="POST" action="/api-routes/genre">
                     <div>
-                        <label>Name: </label>
+                        <p>Name: </p>
                         <input type="text" name="name"/>
                         <button type="submit">Add Genre</button>
                     </div>

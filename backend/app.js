@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require("express");
 const app = express();
 const morgan = require('morgan');
@@ -14,6 +15,10 @@ app.use(express.urlencoded({ extended: false })) // make req.body to be availabl
 
 // api routes; requires automatically from index.js in the api-routes directory
 app.use('/api-routes', require('./api-routes'));
+
+// static file-serving middleware
+// This matches any url for a GET request to a possible file in the public directory.
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // error handling endware
 app.use((err, req, res, next) => {

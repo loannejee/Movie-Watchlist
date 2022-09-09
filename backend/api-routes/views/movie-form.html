@@ -1,0 +1,32 @@
+<!-- html:5 for the basic html boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add a movie to your watchlist</title>
+</head>
+<body>
+    <h1>Add movie</h1>
+    <form method="POST" action="/api-routes/movies">
+        <div>
+            <label>Title: </label>
+            <input type="text" name="title"/>
+        </div>
+        <div>
+            <label>IMDB link: </label>
+            <input type="text" name="imdbLink" placeholder="Optional"/>
+        </div>
+        <div>
+            <label>Genres: </label>
+            <select name="genres">
+                <option value="14">Horror</option>
+                <option value="15">Comedy</option>
+            </select>
+            <select name="genres">
+                <option value="14">Horror</option>
+                <option value="15">Comedy</option>
+            </select>
+        </div>
+        <button type="submit">Add Movie</button>
+    </form>
+</body>
+</html>
