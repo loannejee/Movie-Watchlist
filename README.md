@@ -31,7 +31,7 @@ This site will be a self-hosted application for one person to keep track of what
     - Movie
     - Genre
 3. ✔️ Defining a route to send back an HTML page with a form to create a genre.
-4. Defining a route to send back an HTML page with a form to enter a new movie.
+4. ✔️ Defining a route to send back an HTML page with a form to enter a new movie.
 5. Defining a route to send back an HTML page with the list of movies in the database.
 6. Adding functionality for setting a movie to "watched" and "unwatched"
 7. Updating the movies listing routes to filter by genre and "unwatched"
